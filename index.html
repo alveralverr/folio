@@ -1,63 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="gen-styles.css">
+  <link rel="stylesheet" href="case-styles.css">
 </head>
+
 <body>
-    <!-- Sidebar menu -->
-    <div class="sidebar">
-        <div class="sidebar-item">
-          <div class="icon-div">
-            <i class="icon">O</i>
-          </div>
-          <div class="title">AI</div>
-        </div>
-        <div class="sidebar-item">
-          <div class="icon">
-            <i class="your-icon-class">O</i>
-          </div>
-          <div class="title">Luna</div>
-        </div>
-        <div class="sidebar-item">
-            <div class="icon">
-              <i class="your-icon-class">O</i>
-            </div>
-            <div class="title">Sherpa</div>
-          </div>
-        <!-- Add more sidebar items as needed -->
+  <!-- Home -->
+  <div class="home-logo">
+    <a href="#intro-container" class="smooth-scroll">ALVER REMOLAR</a>
+  </div>
+  <!-- Sidebar menu -->
+  <div class="sidebar">
+    <div class="sidebar-item">
+      <a href="#project-1" class="smooth-scroll">
+        <i class="case-icon-sm">
+          <img src="images/miso_logo_300x300.png" alt="Project 1 Nav Icon">
+        </i>
+      </a>
+      <div class="sidebar-title">Slackbot</div>
     </div>
-    <!-- Intro -->
-    <div id="intro-container" class="container">
-        <div class="intro">
-            <h1 id="intro-title">Hey, my name is Alver.</h1>
-            <p id="intro-subtitle">Formerly an architect, I studied tech —<br>
-            interaction design and data in Sydney.</p>
-            <p id="intro-para">I am passionate about creating or managing<br>
-            digital products that make the physical world<br>
-            slightly a better place for people to live in.</p>
-        </div>
+    <div class="sidebar-item">
+      <div class="nav-icon">
+        <a href="#project-2" class="smooth-scroll">
+          <i class="case-icon-sm">
+            <img src="images/sherpa_logo_300x300.png" alt="Project 2 Nav Icon">
+          </i>
+        </a>
+      </div>
+      <div class="sidebar-title">Sherpa</div>
     </div>
-    <div id="case-preview" class="container">  
-        <div class="case-icon-lg">
-        </div>
-        <div class="case-icon-lg">
-        </div>
-        <div class="case-icon-lg">
-        </div>
+    <div class="sidebar-item">
+      <div class="nav-icon">
+        <a href="#project-3" class="smooth-scroll">
+          <i class="case-icon-sm">
+            <img src="images/luna_logo_300x300.png" alt="Project 3 Nav Icon">
+          </i>
+        </a>
+      </div>
+      <div class="sidebar-title">Luna</div>
     </div>
-    <div class="case-container">  
-      <div class="case-study">
-        <h1>AI Misogyny Detector</h1>
-        <br>
-        <h2>Problem</h2>
+    <div class="sidebar-item">
+      <div class="nav-icon">
+        <a href="#contact" class="smooth-scroll">
+          <i class="case-icon-sm">
+            <img src="images/access_logo_300x300.png" alt="Contact">
+          </i>
+        </a>
+      </div>
+      <div class="sidebar-title">Access Checker</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="nav-icon">
+        <a href="#contact" class="smooth-scroll">
+          <i class="case-icon-sm">
+            <img src="images/contact_300x300.png" alt="Contact">
+          </i>
+        </a>
       </div>
     </div>
-    <script src="script.js"></script>
+      <div class="sidebar-title">Contact</div>
+    </div>
+    <!-- Add more sidebar items as needed -->
+  </div>
+
+  <!-- Intro -->
+  <div id="intro-container" class="container">
+    <div class="intro">
+      <h1 id="intro-title">Hi, I'm Alver.</h1>
+      <p id="intro-subtitle">I studied interaction design in Sydney,<br>
+        coming from an architectural and<br>
+        project management background.</p>
+      <p id="intro-para">I am passionate about digital products that<br>
+        have real-world impact on people's lives.</p>
+    </div>
+  </div>
+  <!-- Case Studies -->
+  <div class="case-preview container">
+
+    <div class="case-grid">
+      <div class="case-icon-lg">
+        <a href="#project-1" class="smooth-scroll">
+          <img src="images/miso_logo_600x600.png" alt="Project 1 Icon">
+          <!-- Credit: https://www.vecteezy.com/vector-art/50445985-colorful-company-logo-image-design-company-branding-design -->
+          <div class="overlay">
+            <h3>AI Slackbot</h3>
+            <p>moderating content in online workplace communication</p>
+          </div>
+        </a>
+      </div>
+      <div class="case-icon-lg">
+        <img src="images/sherpa_logo_600x600.png" alt="Project 2 Icon">
+        <div class="overlay">
+          <h3>Sherpa</h3>
+          <p>preventing isolation and fostering a community of remote workers</p>
+        </div>
+      </div>
+      <div class="case-icon-lg">
+        <img src="images/luna_logo_600x600.png" alt="Project 3 Icon">
+        <div class="overlay">
+          <h3>Luna</h3>
+          <p>supporting a safer commuting experience</p>
+        </div>
+      </div>
+      <div class="case-icon-lg">
+        <img src="images/access_logo_600x600.png" alt="Project 4 Icon">
+        <div class="overlay">
+          <h3>Accessibility Checker</h3>
+          <p>increasing building accessibility compliance for more livable and inclusive cities</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Case Study 1 -->
+  <section id="project-1" class="case-container">
+    <div class="case-study">
+      <h1 id="project-1-name" class="project-name">AI Slackbot</h1>
+      <h2 class="project-sec">Overview</h2>
+      <p class="project-para">As the digital space becomes an integral part of our daily lives, it also
+        provides a platform for toxic language and abusive behaviour.[1]
+        Our Sydney-based client, a certified social trader organisation specialising in
+        aiding enterprises on <a href="https://online.hbs.edu/blog/post/what-is-dei">DEI</a>, wanted a working prototype
+        that addresses misogyny and sexism in online communication to demonstrate to their customers.<br>
+      <p class="project-para">This project utilizes a
+        <strong>large language model (LLM)</strong> to aid content moderation in minimizing the harmful effects of
+        <strong>misogyny and sexism in workplace group chats.</strong><br>
+      </p>
+      <iframe width="100%" height="430" src="images/slackbot/chatbot_demo.mp4" title="Slackbot Demo" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe><br>
+      <p class="project-para">The final output is an <strong>AI-powered chatbot</strong> integrated in a Slack channel
+        which
+        provides real-time feedback in <strong>helping workplace conversations become more inclusive.</strong></p>
+      <p class="project-para disclaimer">Due to request for confidentiality, some technical details of this project cannot be disclosed.</p>
+  </section>
+  <section class="case-preview">
+    <div>
+      <table class="project-table">
+        <tr>
+          <th class="table-head" colspan="2">CONTEXT</th>
+          <th class="table-head">TIMELINE</th>
+          <th class="table-head">ROLE</th>
+        </tr>
+        <tr>
+          <td colspan="2">Capstone internship & global exchange in Berlin</td>
+          <td>6 months (5 sprints of three weeks each)</td>
+          <td>Product Owner</td>
+        </tr>
+        <tr>
+          <th class="table-head">SKILLS</th>
+          <th class="table-head" colspan="2">TEAM</th>
+          <th class="table-head">MAIN CONTRIBUTIONS</th>
+        </tr>
+        <tr>
+          <td>PM (Agile/ SCRUM)<br>Applied LLM (API request)<br>Python, Flask</td>
+          <td colspan="2">Karenina Schroder<br>Ella Klamm<br>David Fusch</td>
+          <td>Stakeholder management<br>Background research<br>Prompting and testing</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section class="case-container">
+    <div class="case-study">
+      <h2 class="project-sec">Problem</h2>
+      <ul class="project-para">
+        <li>Misogyny (derogatory comments or sexual innuendo) is still widespread [1].</li>
+        <li>This may result in a hostile work environment leading to stress, isolation, and reduced
+          productivity or job satisfaction[2].</li>
+        <li>Messaging platforms lack built-in moderation as a mechanism against toxic behaviour.</li>
+        <li>Manual content moderation can be slow, time-consuming, and emotionally burdensome.</li>
+      </ul><br>
+      <h2 class="project-sec">Motivation</h2>
+      <table class="project-table">
+        <tr>
+          <td class="td-features-table"><img src="images/slackbot/woman_success.png" class="img-features-table" alt="Motivated Woman"><br></td>
+          <td colspan="3"><ul class="project-para">
+              <li>People work better in teams where they feel safe.</li>
+              <li>Diverse teams can achieve more.</li>
+            </ul><br>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <table class="project-table">
+        <tr>
+          <th>Vision</th>
+          <th>Mission</th>
+        </tr>
+        <tr>
+          <td>
+            <p class="project-para">To develop a solution that empowers its users so that companies can benefit from a
+              more inclusive work atmosphere without misogyny and sexism.</p><br>
+          </td>
+          <td>
+            <p class="project-para">Implement a faster, more efficient, and arguably more impartial content moderation
+              tool in the workplace by leveraging GenAI technology.</p><br>
+          </td>
+      </table>
+      <h2 class="project-sec">Target Users</h2>
+          <p class="project-para">Employees, HR Departments, IT Teams, Team Leads, Managers and Owners</p><br>
+    
+          <h2 class="project-sec">Aims</h2>
+          <p class="project-para">The goal is education-based impact towards the long-term behavioural change of its users,
+            rather than surveillance and censorship.</p><br>
+      </div>
+      </section>
+      <section class="case-preview">
+        <div class="case-study">
+          <h2 class="project-sec">Impact</h2>
+          <p class="project-para">This first prototype is currently being used for further development and seeking of funding, based on the
+            last correspondence with the client.</p><br>  
+        </div>
+      </section>
+      <section class="case-container">
+      <div class="case-study">
+      <h2 class="project-sec">Deliverables</h2>
+      <ol class="project-para">
+        <li>Minimum Viable Product (MVP)</li>
+        <ul>
+          <li>recognize misogynistic text (true or false)</li>
+          <li>75-80% accuracy on a balanced dataset</li>
+          <li>collecting misogynistic text in a file</li>
+          <li>can be run locally on the terminal</li>
+        </ul>
+        <li>Choice of LLM, messaging app, and dataset for evaluation</li>
+        <ul>
+          <li>decision-making backed by literature review, user and market research</li>
+        </ul>
+        <li>Final Prototype</li>
+        <ul>
+          <li>additional features</li>
+          <li>AI chatbot integration in Slack</li>
+          <li>Deployed on the web (at the time of submission)</li>
+        </ul>
+        <li>Documentation</li>
+        <ul>
+          <li>GitHub repo with source code and readme</li>
+        </ul>
+      </ol>
+      </p><br>
+
+      <h2 class="project-sec">Background Research</h2>
+      <p class="project-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in augue risus. Fusce
+        gravida tellus a est pretium semper.
+        Fusce luctus accumsan urna ac congue. Nullam mattis enim nunc, sit amet euismod magna aliquet ut. Sed egestas
+        varius magna, ut vehicula erat pulvinar eget.</p><br>
+      <div class="card-container">
+        <div class="intro-card">
+          <p class="quote">"42% working women in the U.S. have faced gender-based discrimination on the job."[3]</p>
+        </div>
+        <div class="intro-card-alt">
+          <p class="quote">"Increased collaboration in online platforms have become central to workplace
+            communication."[4]</p>
+        </div>
+        <div class="intro-card">
+          <p class="quote">"Sexism and misogyny harm the efficiency and wellbeing of employees."[5]</p>
+        </div>
+      </div><br>
+
+      <h2 class="project-sec">Early Ideation</h2>
+      <img src="images/slackbot/mvp.png" class="img-features" alt="MVP"><br>
+
+      <h2 class="project-sec">Development</h2>
+      <p class="project-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in augue risus. Fusce
+        gravida tellus a est pretium semper.
+        Fusce luctus accumsan urna ac congue. Nullam mattis enim nunc, sit amet euismod magna aliquet ut. Sed egestas
+        varius magna, ut vehicula erat pulvinar eget.</p><br>
+
+      <h2 class="project-sec">Testing and Validation</h2>
+      <p class="project-para">Using a certain dataset and evaluation methods, our Chatbot is capable of recognizing misogyny with:
+        
+        Accuracy: Over 90%
+        Precision: 89%
+        Recall: 94%</p><br>
+      
+      <h2 class="project-sec">Challenges and Setbacks</h2>
+      <p class="project-para">1. Server setup and capacity / running Large Language Models
+        2. Server accessibility and deployment
+        3. Context check
+        4. Parsing the output
+        5. Nuances of language and meanings
+      </p><br>
+
+      <h2 class="project-sec">Iteration and Improvement</h2>
+      <p class="project-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br>
+      <img src="images/slackbot/classification.png" class="img-features" alt="Classification Feature">
+      <img src="images/slackbot/team_feedback.png" class="img-features" alt="Team Feedback Feature">
+      <img src="images/slackbot/notify_HR.png" class="img-features" alt="Notify HR Feature">
+      <img src="images/slackbot/bot_DM.png" class="img-features" alt="Direct Message Feature">
+      <img src="images/slackbot/traffic_light.png" class="img-features" alt="Traffic Light Feature">
+      <br>
+      <h2 class="project-sec">Final Product</h2>
+      <p class="project-para">Current Capabilities
+        The Chatbot can detect even subtle misogyny by considering the context of conversations. When a potentially misogynistic message is flagged, the user receives a direct message with:
+        
+        The flagged message
+        A probability score
+        A brief explanation of why the message might be considered misogynistic
+        
+        HR Private Channel
+        Additional Features
+        HR Management Tools
+        Statistics on individuals and teams are available as a CSV file.
+        Notifications are sent to a private Slack channel for HR to ensure important information is not overlooked.
+        Realtime Evaluation
+        Developed a Chrome extension for live message evaluation.
+        Implemented a traffic light system (red, orange, green) to visualize the evaluation and probability scores for users.
+        </p><br>
+
+      <h2 class="project-sec">Future Steps</h2>
+      <p class="project-para">User Interface and Experience
+        Data Storage, Access, and Security
+        Complex Meanings, Conversational Sequences, and Socio-behavioural Patterns
+        Multi-lingual and Multi-cultural Support
+        Hate Speech Beyond Misogyny and Sexism
+      </p><br>
+
+
+      <br>
+      <hr>
+    </div>
+  </section>
+
+  <!-- Case Study 2 -->
+  <section id="project-2" class="case-container">
+    <div class="case-study">
+      <h1 class="project-name">Sherpa</h1>
+      <h2 class="project-sec">Overview</h2>
+      <p class="project-para">With a team of four</p><br>
+      <p class="project-para">This project utilizes a large language model (LLM) to aid content moderation in minimising the harmful effects
+        of misogyny and sexism in workplace group chats,
+        with the goal of education-based impact towards long-term behavioural change of its users, rather than
+        surveillance and censorship.</p><br>
+    </div>
+  </section>
+
+  <!-- Case Study 3 -->
+  <section id="project-2" class="case-container">
+    <div class="case-study">
+      <h1 class="project-name">Luna</h1>
+      <h2 class="project-sec">Overview</h2>
+      <p class="project-para">Our Sydney-based client, which is a certified social trader organisation specialising in
+        DEI for companies, wanted a working prototype as a demonstrator for their customers.</p><br>
+      <p class="project-para">This project utilizes a large language model (LLM) to aid content moderation in minimising the harmful effects
+        of misogyny and sexism in workplace group chats,
+        with the goal of education-based impact towards long-term behavioural change of its users, rather than
+        surveillance and censorship.</p><br>
+    </div>
+  </section>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="contact-footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><i class="fas fa-envelope"></i> alver.design@email.com</p>
+        <p><i class="fas fa-phone"></i> +61 (123) 456-7890</p>
+      </div>
+      <div class="social-links">
+        <h2>Connect</h2>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+      <div class="resume-section">
+        <a href="#" class="resume-button">
+          <i class="fas fa-file-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Alver's Portfolio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
